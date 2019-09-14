@@ -1,0 +1,32 @@
+<paddle>
+    <body name="paddle" pos="0.0 0.0 0.0">
+    <!--
+      <joint name="paddle_joint" type="free"/>
+    -->
+      <joint axis="1 0 0" name="paddle:slidex" type="slide" damping="100.0"/>
+      <joint axis="0 1 0" name="paddle:slidey" type="slide" damping="100.0"/>
+      <joint axis="0 0 1" name="paddle:slidez" type="slide" damping="1.0"/>
+      <joint axis="0 0 1" name="paddle:hingez" type="hinge" damping="1.0"/>
+      <!-->
+      <inertial pos="0 0 0" mass="1" diaginertia="0.01 0.01 0.01" />
+      -->
+      <geom name="paddle" mass="40" size="0.01 0.05 0.1" type="box" rgba="0.823529 0.666667 0.470588 1" material="paddle_mat"/>
+    </body>
+
+    <body name="invisiwall_0">
+      <geom name="invisiwall_0" size="1.0 0.1 0.2" class="invisiwall" />
+    </body>
+
+    <body name="invisiwall_1">
+      <geom name="invisiwall_1" size="0.1 1.0 0.2" class="invisiwall" />
+    </body>
+
+    <body name="invisiwall_2">
+      <geom name="invisiwall_2" size="1.0 0.1 0.2" class="invisiwall" />
+    </body>
+
+    <body name="invisiwall_3">
+      <geom name="invisiwall_3" size="0.1 1.0 0.2" class="invisiwall" />
+    </body>
+
+</paddle>

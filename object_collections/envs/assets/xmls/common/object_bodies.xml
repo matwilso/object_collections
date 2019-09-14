@@ -1,0 +1,66 @@
+<objects>
+    <body name="object0" childclass="object">
+    	<joint name="object0:joint" />
+		<!--
+    	<geom name="object0" material="object0_mat" type="cylinder" size="0.012 0.005" mass="0.1"/>
+		-->
+    	<geom name="object0" material="object0_mat"/>
+    </body>
+
+    <body name="object1" childclass="object">
+    	<joint name="object1:joint" />
+    	<geom name="object1" material="object1_mat"/>
+    </body>
+
+    <body name="object2" childclass="object">
+    	<joint name="object2:joint" />
+    	<geom name="object2" material="object2_mat"/>
+    </body>
+
+    <body name="object3" childclass="object">
+    	<joint name="object3:joint" />
+    	<geom name="object3" material="object3_mat"/>
+    </body>
+
+    <body name="object4" childclass="object">
+    	<joint name="object4:joint" />
+    	<geom name="object4" material="object4_mat"/>
+    </body>
+
+    <body name="object5" childclass="object">
+    	<joint name="object5:joint" />
+    	<geom name="object5" material="object5_mat"/>
+    </body>
+
+    <body name="object6" childclass="object">
+    	<joint name="object6:joint" />
+    	<geom name="object6" material="object6_mat"/>
+    </body>
+
+    <body name="object7" childclass="object">
+    	<joint name="object7:joint" />
+    	<geom name="object7" material="object7_mat"/>
+    </body>
+
+    <body name="object8" childclass="object">
+    	<joint name="object8:joint" />
+    	<geom name="object8" material="object8_mat"/>
+    </body>
+
+    <body name="object9" childclass="object">
+    	<joint name="object9:joint" />
+    	<geom name="object9" material="object9_mat"/>
+    </body>
+
+    <site name="target0"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="1 0 0 0.5" type="box"></site>
+    <site name="object0"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object1"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object2"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object3"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object4"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object5"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object6"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object7"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object8"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+    <site name="object9"  pos="0 0 0" size="0.0127 0.0127 0.0127" rgba="0 1 0 1" type="sphere"></site>
+</objects>

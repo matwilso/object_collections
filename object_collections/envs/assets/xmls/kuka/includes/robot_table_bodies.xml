@@ -1,0 +1,54 @@
+<robot_table>
+  <!-- legs -->
+  <body name="robot_table_leg0">
+       <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+       <geom name="robot_table_leg0" class="table_leg" />
+  </body>
+  <body name="robot_table_leg1">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_leg1" class="table_leg" />
+  </body>
+  <body name="robot_table_leg2">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_leg2" class="table_leg" />
+  </body>
+  <body name="robot_table_leg3">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_leg3" class="table_leg" />
+  </body>
+  
+   <!-- crossbars -->
+  <body name="robot_table_bar0">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_bar0" class="table_crossbar" />
+  </body>
+  <body name="robot_table_bar1">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_bar1" class="table_crossbar" />
+  </body>
+  <body name="robot_table_bar2">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_bar2" class="table_crossbar" />
+  </body>
+  <body name="robot_table_bar3">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_bar3" class="table_crossbar" />
+  </body>
+   <!-- lengthwise -->
+  <body name="robot_table_lbar0">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6"/>
+     <geom name="robot_table_lbar0" class="lengthwise_crossbar"/>
+  </body>
+  <body name="robot_table_lbar1">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_lbar1" class="lengthwise_crossbar" />
+  </body>
+  <body name="robot_table_lbar2">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_lbar2" class="lengthwise_crossbar" />
+  </body>
+  <body name="robot_table_lbar3">
+     <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+     <geom name="robot_table_lbar3" class="lengthwise_crossbar" />
+  </body>
+</robot_table>

@@ -1,0 +1,42 @@
+<paddle>
+  <asset>
+    <texture builtin="flat" name="invisiwall_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="paddle_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="paddle_mat" shininess="0.03" specular="0.75" texture="paddle_tex"></material>
+    <material name="invisiwall_mat" shininess="0.03" specular="0.75" texture="invisiwall_tex"></material>
+  </asset>
+
+   <default class="invisiwall">
+      <geom type="box" mass="100" rgba="0.1 0.1 0.1 0.5" material="invisiwall_mat"/>
+   </default>
+
+  <actuator>
+      <!--
+      <motor gear="2000.0" joint="paddle:slidex" forcelimited="true" forcerange="-.2 .2" name="x"/>
+      <motor gear="2000.0" joint="paddle:slidey" forcelimited="true" forcerange="-.2 .2" name="y"/>
+      <motor gear="2000.0" joint="paddle:slidez" forcelimited="true" forcerange="-.2 .2"/>
+      -->
+      <position gear="80.0" joint="paddle:slidex" name="xp"/>
+      <velocity gear="80.0" joint="paddle:slidex" name="xv"/>
+  
+      <position gear="80.0" joint="paddle:slidey" name="yp"/>
+      <velocity gear="80.0" joint="paddle:slidey" name="yv"/>
+  
+      <position gear="40.0" joint="paddle:slidez" name="zp"/>
+      <velocity gear="40.0" joint="paddle:slidez" name="zv"/>
+  
+      <position gear="2.0" joint="paddle:hingez" name="hp"/>
+  </actuator>
+  
+  
+  <contact>
+    <exclude body1="invisiwall_0" body2="paddle" />
+    <exclude body1="invisiwall_1" body2="paddle" />
+    <exclude body1="invisiwall_2" body2="paddle" />
+    <exclude body1="invisiwall_3" body2="paddle" />
+  </contact>
+
+</paddle>
+
+ 

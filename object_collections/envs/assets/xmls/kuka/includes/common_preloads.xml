@@ -1,0 +1,17 @@
+<common>
+  <include file="../common/common_settings.xml"></include>
+
+  <asset>
+    <mesh name="base_link" file="base_link.stl" />
+    <mesh name="link0" file="link0.stl" />
+    <mesh name="link1" file="link1.stl" />
+    <mesh name="link2" file="link2.stl" />
+    <mesh name="link3" file="link3.stl" />
+    <mesh name="link4" file="link4.stl" />
+    <mesh name="link5" file="link5.stl" />
+    <mesh name="link6" file="link6.stl" />
+    <mesh name="link7" file="link7.stl" />
+    <mesh name="kuka_mount" file="kuka_mount.stl" />
+  </asset>
+
+</common>

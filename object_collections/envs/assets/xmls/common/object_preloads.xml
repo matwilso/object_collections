@@ -1,0 +1,48 @@
+<object>
+  <asset>
+    <texture  name="object0_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object1_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object2_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object3_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object4_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object5_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object6_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object7_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object8_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object9_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object10_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object11_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object12_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object13_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object14_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture  name="object15_tex" builtin="flat" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+
+    <material name="object0_mat" shininess="0.03" specular="0.75" texture="object0_tex"></material>
+    <material name="object1_mat" shininess="0.03" specular="0.75" texture="object1_tex"></material>
+    <material name="object2_mat" shininess="0.03" specular="0.75" texture="object2_tex"></material>
+    <material name="object3_mat" shininess="0.03" specular="0.75" texture="object3_tex"></material>
+    <material name="object4_mat" shininess="0.03" specular="0.75" texture="object4_tex"></material>
+    <material name="object5_mat" shininess="0.03" specular="0.75" texture="object5_tex"></material>
+    <material name="object6_mat" shininess="0.03" specular="0.75" texture="object6_tex"></material>
+    <material name="object7_mat" shininess="0.03" specular="0.75" texture="object7_tex"></material>
+    <material name="object8_mat" shininess="0.03" specular="0.75" texture="object8_tex"></material>
+    <material name="object9_mat" shininess="0.03" specular="0.75" texture="object9_tex"></material>
+    <material name="object10_mat" shininess="0.03" specular="0.75" texture="object10_tex"></material>
+    <material name="object11_mat" shininess="0.03" specular="0.75" texture="object11_tex"></material>
+    <material name="object12_mat" shininess="0.03" specular="0.75" texture="object12_tex"></material>
+    <material name="object13_mat" shininess="0.03" specular="0.75" texture="object13_tex"></material>
+    <material name="object14_mat" shininess="0.03" specular="0.75" texture="object14_tex"></material>
+    <material name="object15_mat" shininess="0.03" specular="0.75" texture="object15_tex"></material>
+  </asset>
+
+  <default>
+    <default class="object">
+    	  <joint type="free" damping="0.01"></joint>
+    	  <geom size="0.0127 0.0127 0.0127" type="box" material="object_mat" mass="0.0001"></geom>
+        <!--
+    	  <site pos="0 0 0" size="0.02 0.02 0.02" rgba="0 1 0 1" type="sphere"></site>
+        -->
+    </default>
+  </default>
+
+</object>

@@ -1,0 +1,69 @@
+<common_settings>
+  <compiler angle="radian" meshdir="./meshes/" />
+  <size njmax="5000" nconmax="2000" nstack="5000000"/>
+  <option timestep="0.01" iterations="20">
+  <!-->
+  <option timestep="0.002" iterations="20" integrator="RK4">
+    <flag warmstart="enable"/>
+  -->
+  </option>
+  <visual>
+    <map znear=0.0001 fogstart="3" fogend="5" force="0.005" />
+    <quality shadowsize="4096"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.4 0.4 0.4" specular="0.5 0.5 0.5" />
+    <scale contactwidth="0.01" contactheight="0.01" forcewidth="0.01"/>
+  </visual>
+
+  <asset>
+    <texture builtin="flat" name="table_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="robot_table_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="table_leg_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="base_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="arm_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="flat" name="kuka_mount_tex" height="32" width="32" rgb1="1 1 1" type="cube"></texture>
+    <texture builtin="gradient" name="skybox_tex" rgb1="1 1 1" rgb2=".6 .8 1" width="256" height="256" type="skybox"/>
+  
+    <material name="table_mat" shininess="0.03" specular="0.75" texture="table_tex"></material>
+    <material name="robot_table_mat" shininess="0.03" specular="0.75" texture="robot_table_tex"></material>
+    <material name="table_leg_mat" shininess="0.03" specular="0.75" texture="table_leg_tex"></material>
+    <material name="base_mat" shininess="0.03" specular="0.75" texture="base_tex"></material>
+    <material name="arm_mat" shininess="0.03" specular="0.75" texture="arm_tex"></material>
+    <material name="kuka_mount_mat" shininess="0.03" specular="0.75" texture="kuka_mount_tex"></material>
+    <material name="skybox_mat" shininess="0.03" specular="0.75" texture="skybox_tex"></material>
+  </asset>
+  
+  <!-- for common_bodies_complex only -->
+  <default>
+
+    <default class="table_leg">
+      <geom type="box" size="0.0275 0.0275 0.42" material="table_leg_mat"/>
+    </default>
+
+    <default class="table_crossbar">
+      <geom type="box" size="0.01 0.01 0.01" material="table_leg_mat"/>
+    </default>
+
+    <default class="lengthwise_crossbar">
+      <geom type="box" size="0.01 0.01 0.01" material="table_leg_mat" />
+    </default>
+
+    <default class="robot_geom">
+      <geom contype="0" conaffinity="0" />
+    </default>
+
+    <default class="baxter_joint">
+        <geom contype="0" conaffinity="0" />
+        <joint limited="true" damping="1e7" armature=".01"/>
+    </default>
+
+    <default class="distract">
+      <geom type="box" size="0.1 0.1 0.1" contype="0" conaffinity="0" />
+    </default>
+
+	  <default class="viz">
+	  	<geom contype="0" conaffinity="0" group="1" type="mesh"/>
+	  </default>
+
+  </default>
+
+</common_settings>

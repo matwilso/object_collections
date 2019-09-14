@@ -1,0 +1,68 @@
+<common>
+    <body name="object_table" pos="-0.88 0 0.84">
+      <!--
+      <inertial pos="0 0 0" mass="200" diaginertia="0.01 0.01 0.01" />
+      -->
+      <geom mass="2000" name="object_table" pos="0.0 0.0 0.025" size="0.3 0.605 0.02" type="box" rgba="1 1 1 1" material="table_mat"/>
+      <!--
+      <geom mass="2000" name="object_table" pos="0.0 0.0 0.025" size="0.3 0.605 0.02" type="box" rgba="0.823529 0.666667 0.470588 1" material="table_mat"/>
+      -->
+      <!--
+      <geom mass="2000" name="object_table" pos="0.0 0.0 0.025" size="0.38 0.61 0.025" type="box" rgba="0.823529 0.666667 0.470588 1" material="table_mat"/>
+      -->
+
+      <!-- legs -->
+	    <body name="object_table_leg0" pos="0.2825 0.5125 -0.42">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_leg0" class="table_leg" />
+      </body>
+	    <body name="object_table_leg1" pos="-0.2825 -0.5125 -0.42">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_leg1" class="table_leg" />
+      </body>
+	    <body name="object_table_leg2" pos="-0.2825 0.5125 -0.42">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_leg2" class="table_leg" />
+      </body>
+	    <body name="object_table_leg3" pos="0.2825 -0.5125 -0.42">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_leg3" class="table_leg" />
+      </body>
+
+      <!-- crossbars -->
+	    <body name="object_table_bar0">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_bar0" class="table_crossbar" />
+      </body>
+	    <body name="object_table_bar1">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_bar1" class="table_crossbar" />
+      </body>
+	    <body name="object_table_bar2">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_bar2" class="table_crossbar" />
+      </body>
+	    <body name="object_table_bar3">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_bar3" class="table_crossbar" />
+      </body>
+      <!-- lengthwise -->
+	    <body name="object_table_lbar0">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6"/>
+        <geom name="object_table_lbar0" class="lengthwise_crossbar"/>
+      </body>
+	    <body name="object_table_lbar1">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_lbar1" class="lengthwise_crossbar" />
+      </body>
+	    <body name="object_table_lbar2">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_lbar2" class="lengthwise_crossbar" />
+      </body>
+	    <body name="object_table_lbar3">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-6 1e-6 1e-6" />
+        <geom name="object_table_lbar3" class="lengthwise_crossbar" />
+      </body>
+
+    </body>
+</common>
