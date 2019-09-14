@@ -42,7 +42,7 @@ Contents:
   - `viz.py` - Code for visualizing MDNs, rollouts, etc.  Some gems, but overall not that happy with this code.
 
 ## Notes
-- I call the Autoencoder model VAE in the code, sry
+- I call the Autoencoder model VAE in the code, sorry for any confusions this causes
 - I parse all CMD line args into a dictionary called FLAGS which gets passed everywhere.  
 - Some of the rewards processing is pretty hacky, so sorry about that.
 
@@ -129,11 +129,6 @@ These reach 10k iterations (what we use in the paper) in about 10 hours.
 # FULL 
 ./eval_main.py --goal_conditioned=True --num_envs=1 --eval_n=100 --phi_noise=0.0 --is_training=False --cnn_gn=cnn_gn --goal_conditioned=True --load_path $PATH_TO_RL_CKPT --aac=True --value_goal=True  --play=True  --render=1 --reset_mode=cluster --suffix=full
 ```
-
-We don't show how to evaluate in real world, since you likely won't go to the effort of matching our robot setup.
-Also it requires opening like 8 terminal windows and is generally a pain in the ass.
-
-
 
 ## Acknowledgements
 Some code in this repo is borrowed from:
