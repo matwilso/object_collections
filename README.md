@@ -7,7 +7,7 @@ This is a research codebase.
 My hope is that it will be useful in the case that a reader of the paper wants 
 to dig more into the specific details and implementation.
 I have cleaned some things up a bit, but the code is still a bit messy.
-This is not designed as a good jumping off point for future work.
+This was designed to try out some ideas and not necessarily to be a good jumping off point for future work.
 
 Contents:
 - [Codebase Outline](#codebase-outline)
